@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js" type="module" ></script>
+    <script src="main.js" type="module"></script>
+    <script src="visualizer.js" type="module"></script>
+    <script src="audioPlayer.js" type="module" ></script>
+</head>
+<body onload="main()">
+    <div id="playerContainer">
+        <img src="./assets/mainbody.png" id="mainBody" />
+        <img src="./assets/volback.png" id="volback" />
+        <img src="./assets/buttonback.png" id="bttnback" />
+        <img src="./assets/mainScreen.png" id="mainScreen" />
+
+        <img src="./assets/pl_h.gif" id="pl_h" />
+        <img src="./assets/eq_d.gif" id="eq_d" />
+        <img src="./assets/info_d.gif" id="info_d" />
+    
+    <div id="songInfoContainer">
+        <span class="info move" id="songInfo" ></span>
+    </div>
+
+        <button id="playButton" class="button" ></button>
+        <button id="nextButton" class="button"></button>
+        <button id="prevButton" class="button"></button>
+        <button id="stopButton" class="button"></button>
+    </div>
+    <audio id="audioPlayer" crossOrigin="anonymous">
+        <source src="" type="audio/mpeg" >
+    </audio>
+    <canvas></canvas>
+</body>
+</html>

@@ -1,0 +1,163 @@
+@font-face {
+    font-family: AudioNugget;
+    src: url(./assets/AudioNugget.ttf);
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+canvas {
+    background: black;
+    bottom: 132px;
+    left: 303px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 50%;
+    z-index: 0;
+    width: 170px;
+    height: 90px;
+    position: relative;
+    z-index: 3;
+}
+
+#mainBody {
+    position: absolute;
+    z-index: 4;
+}
+
+#volback {
+    position: absolute;
+    left: 208px;
+    top: 123px;
+    height: 86px;
+    width: auto;
+}
+
+#bttnback {
+    position: relative;
+    top: 52px;
+    left: 28px;
+}
+
+#mainScreen {
+    top: 95px;
+    left: 265px;
+    position: absolute;
+    z-index: 3;
+    /* opacity: 0.9; */
+}
+
+#playerContainer {
+    position: relative;
+    width: 500px;
+    height: 250px;
+}
+.button {
+    position: absolute;
+    background: transparent;
+    cursor: pointer;
+}
+
+#playButton {
+    border-radius: 50px;
+    border:none;
+    top: 87px;  
+    left: 63px; 
+    width: 40px; 
+    height: 40px; 
+    z-index: 4;
+}
+
+#nextButton {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border:none;
+    top: 85px;  
+    left: 110px; 
+    width: 25px; 
+    height: 45px; 
+    z-index: 4;
+}
+
+#prevButton {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border:none;
+    top: 85px;  
+    left: 30px; 
+    width: 28px; 
+    height: 45px; 
+    z-index: 4;
+}
+
+#stopButton {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border:none;
+    top: 133px;  
+    left: 62px; 
+    width: 45px;
+    height: 30px; 
+    z-index: 4;
+}
+
+.info {
+    font-family: 'AudioNugget', sans-serif;
+    size: 5px;
+    position: absolute;
+    z-index: 3;
+    transform: translateY(-50%);
+}
+
+#pl_h {
+    position: absolute;
+    z-index: 5;
+    top: 233px;
+    left: 325px;
+}
+
+#eq_d {
+    position: absolute;
+    z-index: 5;
+    top: 222px;
+    left: 285px;
+}
+
+#info_d {
+    position: absolute;
+    z-index: 5;
+    top: 203px;
+    left: 244px;
+}
+#songInfoContainer {
+    position: absolute;
+    top: 209px;
+    left: 304px;
+    width: 150px; 
+    height: 20px; 
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#songInfo {
+    display: inline-block;
+    position: relative;
+    animation: scroll 11s linear infinite;
+    font-size: 12px; /* Adjust based on your layout */
+    color: white;
+    text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
