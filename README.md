@@ -26,9 +26,9 @@ This is a HTML, JS, CSS project. To use its best to add the url to an iframe and
 ## Usage
 
 ```
-<iframe src="[future github url]" 
-frameBorder="0" title="wmplayer" 
-class="wmp-iframe" />
+  <iframe src="https://snufkinwa.github.io/WMPlayer/"
+  frameBorder="0" allowtransparency = "true" title="wmplayer"
+  class="wmp-iframe" />
 ```
 Make draggable with additional code. 
 ## Contributing
