@@ -3,6 +3,7 @@
     src: url(./assets/AudioNugget.ttf);
   }
 
+:root { color-scheme: none !important; }
 
 * {
     margin: 0;
