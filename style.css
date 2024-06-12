@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: transparent;
+    background-color: transparent;
 }
 
 canvas {
@@ -29,7 +29,7 @@ canvas {
 #mainBody {
     position: absolute;
     z-index: 4;
-     background:transparent;
+     background-color:transparent;
 }
 
 #volback {
@@ -61,7 +61,7 @@ canvas {
 }
 .button {
     position: absolute;
-    background: transparent;
+    background-color: transparent;
     cursor: pointer;
 }
 
